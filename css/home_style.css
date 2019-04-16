@@ -1,0 +1,951 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-family: Palatino, 'Palatino Linotype', serif;
+    color: #252627;
+    background-color: #fcfafa;
+    
+}
+
+a{
+    cursor: pointer;
+}
+
+
+
+/*NAVIGATION*/
+
+.jumbotron{
+    padding-top: 0;
+    background-image: url(../img/aerial-beverage-caffeine-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0;
+}
+
+.navbar-toggler-icon {
+	
+	background-color: black;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+
+.divider-vertical {
+	padding-top: .34rem;
+	font-size: 1.2rem;
+	color: black;
+}
+
+
+.dual-nav ul{
+    font-size: 1.2rem;
+}
+
+.dual-nav li{
+    cursor: pointer;
+}
+
+.dual-nav li > a{
+    position: relative;
+    color: #000;
+    text-decoration: none;
+}
+
+.dual-nav li > a:hover{
+    color: #C12C2C;
+}
+
+.dual-nav li > a:before{
+    content: "";
+    border-bottom: solid 2px #C12C2C;
+    position: absolute;
+    width: 3rem;
+    height: 2px;
+    bottom: 0;
+    left: 1;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.dual-nav .contact-btn{
+    border-bottom: none;
+}
+
+.dual-nav li > a:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    
+}
+.dual-nav button{
+    margin-top: -.4rem;
+    width: 150%;
+    color: #fff;
+    background-color: #C12C2C;
+    border-color: #C12C2C;
+    cursor: pointer;
+}
+
+.dual-nav button:hover{
+    background-color: #4B88A2;
+    border-color: #4B88A2;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/*HEADING*/
+
+
+.open-heading h1{
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    margin-bottom: 2rem;
+}
+
+.open-heading{
+    padding: 4rem 0 16rem 4rem;
+}
+
+.open-heading a{
+    padding: 1rem 0;
+    font-weight: bold;
+    color: #000;
+    font-size: 1.4rem;
+}
+
+.open-heading a:hover{
+    
+    font-weight: bold;
+    color: #C12C2C;
+    padding: 1rem 0;
+    cursor: pointer;
+}
+
+.open-heading span {
+    position: relative;
+    margin-left: 1rem;
+    transition: 1s;
+}
+
+.open-heading a:hover i{
+    
+    -webkit-animation: slide 0.5s forwards;
+    -webkit-animation-delay: 1s;
+    animation: slide 0.5s forwards;
+    animation-delay: 2s;
+}
+
+
+
+
+
+
+/*ABOUT*/
+
+#about {
+	padding: 5rem 4rem 1rem 4rem;
+    background-color: #fcfafa;
+    color: #464646;
+} 
+
+
+
+/*SERVICES*/
+
+.services{
+    padding: 3rem 0;
+    background-color: #fcfafa;
+    
+}
+
+.services p{
+    font-weight: bold;
+}
+
+
+.icon {
+    font-size: 3.2rem; 
+    color: #4b88a2;
+}
+
+
+.icons:after{
+    content: "";
+    border: solid black .8px;
+    height: 60%; //You can change this if you want smaller/bigger borders
+    width: 1px;
+    position: absolute;
+    right: 0;
+    top: 1rem; // If you want to set a smaller height and center it, change this value
+
+}
+
+
+/* CLIENT BLURB*/
+
+.client{
+    background-color: #8d99ae;
+    color: #fff;
+    padding: 9rem 0;
+}
+
+.client-blurb{
+    padding-top: 2rem;
+}
+
+.client-blurb h1{
+    margin-bottom: 1rem;
+}
+
+.client-blurb p{
+    font-size: 1.2rem;
+}
+
+
+/*portfolio*/
+
+.portfolio{
+    padding: 4rem 0 1rem 0;
+    background-color: #fcfafa;
+}
+
+.carousel{
+    padding: 0 0 4rem 0;
+    background-color: #fcfafa;
+}
+
+
+.carousel-item{
+    padding-top: 3rem;
+}
+
+.portfolio-content{
+   padding-right: 2rem;
+}
+
+.fa-ul{
+    font-size: .9rem;
+}
+
+.port-btn {
+    font-size: 1.4rem;
+    background-color: #C12C2C;
+    border-color: #C12C2C;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.carousel-control-prev{
+    top: 85%;
+    left: 85%;
+    width: 60px;
+}
+
+.carousel-control-next{
+    right: 6%;
+    top: 85%;
+    width: 60px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 50px;
+    width: 50px;
+    font-size: 2rem;
+    background-image: none;
+}
+
+
+
+/*CTA*/
+
+.cta {
+	text-align: center;
+	padding: 6rem 0;
+    background-color: #8d99ae;
+    color: #fcfafa;
+}
+
+
+
+
+.btncta {
+	width: 15%;
+    font-size: 1.4rem;
+    background-color: #C12C2C;
+    border-color: #C12C2C;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.btncta:hover, .port-btn:hover{
+    background-color: #4B88A2;
+    border-color: #4B88A2;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+/*FOOTER*/
+
+
+a {
+    all: unset;
+}
+
+.footer {
+	background-color: #252627;
+	color: white;
+	padding-top: 2rem;
+	border-top-color: white;
+	border-top: 
+}
+
+.stayinformed h1 {
+	text-align: center;
+}
+
+
+.stayinformed p {
+	margin-top: 1rem;
+	margin-bottom: 2rem;
+}
+
+.stayinformed ul {
+	list-style: none;
+}
+
+.stayinformed a:hover {
+    color: #C12C2C;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+/*CONTACT US*/
+
+
+.contact  {
+	text-align: center;
+
+}
+
+.address {
+	margin-top: 1rem;
+	
+}
+.contact ul {
+	list-style: none;
+}
+
+
+
+
+
+#iconmail, #iconphone {
+    margin-right: .5rem;
+    
+}
+
+
+.social img {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+
+
+.copyright {
+	text-align: center;
+    padding-top: 1rem;
+}
+
+
+
+/*--------------------------------------------------
+
+/*FOR MOBILE*/
+
+ @media (max-width: 480px) {
+     h1{
+         font-size: 1.1rem;
+     }
+     
+     h2{
+         font-size: 1rem;
+     }
+     
+     p{
+        font-size: .9rem;
+     }
+	 .img-responsive {
+		 width: 100%;
+	 }
+	 
+	 /*MOBILE HEADING*/
+
+     .open-heading h1{
+         font-size: 1.3rem;
+         line-height: 1.6rem;
+         margin-bottom: 2rem;
+     }
+     
+     .open-heading{
+         padding: 2rem 0 0 4.5rem;
+     }
+     
+     .open-heading a{
+         font-size: 1rem;
+         position: relative;
+         bottom: 1rem;
+     }
+     
+     
+     
+
+
+     /*MOBILE ABOUT*/
+
+     #about {
+         padding: 1.5rem 0;
+         background-color: #fcfafa;
+     } 
+    
+     
+     /*MOBILE SERVICES*/
+     
+     [class*="col-xs-2"] {
+         width: 50%;
+     }
+
+     .services{
+         padding: 0 0 1rem 0;
+         background-color: #fcfafa;
+     }
+     
+     .icon {
+         font-size: 1.5rem;
+         float: left;
+         padding-bottom: 1rem;
+         position: relative;
+         bottom: .3rem;
+     }
+
+     .icons:after{
+         content: "";
+         border: none;
+     }
+
+     
+     /* CLIENT BLURB*/
+
+     .client{
+         padding: .1rem 0 1rem 0;
+     }
+
+     .client-blurb{
+         padding-top: 1rem;
+     }
+
+     .client-blurb h1{
+         margin-bottom: 1rem;
+     }
+     .client-blurb p{
+         font-size: .9rem;
+     }
+     
+     .client img{
+         width: 100%;
+     }
+     
+    
+     /*portfolio*/
+
+     .portfolio{
+         padding: 1.5rem 0 0 0;
+     }
+
+     .carousel{
+         padding: 0 0 4rem 0;
+     }
+
+
+     .carousel-item{
+         padding-top: 1rem;
+     }
+     
+     .responsive-cpu img{
+         width: 100%;
+         height: 90%;
+     }
+     
+     
+     .portfolio-content{
+         padding: 2rem;
+     }
+     
+     .carousel-item .logo{
+         width: 6rem;
+     }
+
+     .fa-ul{
+         display: none;
+     }
+
+     .port-btn {
+         font-size: .8rem;
+         margin-top: 0;
+     }
+     
+     .carousel-control-prev{
+         top: 85%;
+         left: 70%;
+         width: 60px;
+     }
+
+     .carousel-control-next{
+         right: .1%;
+         top: 85%;
+         width: 60px;
+     }
+     
+     .carousel-control-prev-icon, .carousel-control-next-icon {
+         font-size: 1.2rem;
+     }
+
+
+
+     /*CTA*/
+
+     .cta {
+         padding: 1rem 0;
+     }
+     
+     .cta h1{
+         font-size: 1rem;
+     }
+     
+     .cta h2{
+         font-size: .8rem;
+     }
+     
+     .btncta {
+         width: 7rem;
+         font-size: .9rem;
+         margin-top: .5rem;
+     }
+
+
+
+	 
+	 
+	 
+	 
+	 /*MOBILE FOOTER*/
+
+     
+     
+     [class*="mobileinformed"] {
+         width: 33.33%;
+     }
+     
+     
+    .stayinformed h1 {
+    }
+
+
+    .stayinformed p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+     .listitem{
+         font-size: .9rem;
+     }
+    
+
+
+/*MOBILE CONTACT US*/
+
+     [class*="contacts"] {
+         width: 50%;
+     }
+
+    .contact  {
+	text-align: left;
+    }
+     
+	.contact h1 {
+        text-align: center;
+	}
+     .contact li {
+		font-size: .9rem;
+	}
+    .address {
+	margin-top: 0;
+    }
+    .contact ul {
+	list-style: none;
+        margin-top: .5rem;
+    }
+     
+    #iconmail, #iconphone {
+	width: 5%;
+    margin-right: .5rem;
+    
+    }
+     .social {
+         text-align: center;
+     }
+    .social img {
+    width: 5% !important;
+	height: .9rem !important;
+    margin: 0 1rem;
+    }
+    .copyright {
+	font-size: .8rem;
+	text-align: center;
+    padding-top: 1rem;
+    }
+	 
+}
+
+
+
+/*-------------------------------------------------*/
+
+/*FOR TABLET*/
+
+ @media (min-width: 768px) and (max-width: 992px){
+     h1{
+         font-size: 1.8rem;
+     }
+     
+     h2{
+     }
+     
+     p{
+         font-size: 1.3rem
+     }
+	 .img-responsive {
+		 width: 100%;
+	 }
+	 
+	 /*MOBILE HEADING*/
+
+     .open-heading h1{
+         font-size: 3rem;
+     }
+     
+     .open-heading{
+         padding: 1rem 0 11rem 4.5rem;
+     }
+     
+     .open-heading a{
+         position: relative;
+         bottom: 1rem;
+     }
+     
+     
+     
+
+
+     /*TABLET ABOUT*/
+
+     #about {
+         padding: 1.5rem 0;
+     } 
+     
+     
+    
+     
+     /*TABLET SERVICES*/
+     
+     .services{
+         padding: 0 0 1rem 0;
+     }
+     
+     .services p{
+         font-size: 1rem;
+         font-weight: bold;
+         
+     }
+     
+     .icons{
+         padding: 0;
+     }
+     
+     .icon {
+         font-size: 2.5rem;
+         padding-bottom: 1rem;
+         
+     }
+
+
+     
+     /* CLIENT BLURB*/
+
+     .client{
+         padding: 2rem 0 2rem 1rem;;
+     }
+
+     .client-blurb{
+         padding-top: 0;
+     }
+
+     .client-blurb h1{
+         margin-bottom: 1rem;
+     }
+     
+     
+     .client img{
+         text-align: center;
+         width: 90%;
+         height: 55%;
+         position: relative;
+         top: 20%;
+     }
+     
+    
+     /*portfolio*/
+
+     .portfolio{
+         padding: 1.5rem 0 0 0;
+     }
+
+     .carousel{
+         padding: 0 0 4rem 0;
+     }
+
+
+     .carousel-item{
+         padding-top: 1rem;
+     }
+     
+     .responsive-cpu img{
+         width: 100%;
+         height: 16rem;
+         position: relative;
+         top: 2rem;
+     }
+     
+     
+     .portfolio-content{
+         padding: 2rem;
+     }
+     
+     .carousel-item .logo{
+         width: 7rem;
+     }
+     
+     .carousel-item p{
+         font-size: 1rem;
+     }
+
+     .fa-ul{
+         display: none;
+     }
+
+     .port-btn {
+         font-size: .8rem;
+         margin-top: 0;
+     }
+     
+     .carousel-control-prev{
+         top: 85%;
+         left: 85%;
+         width: 60px;
+     }
+
+     .carousel-control-next{
+         right: 2%;
+         top: 85%;
+         width: 60px;
+     }
+     
+     .carousel-control-prev-icon, .carousel-control-next-icon {
+         font-size: 1.2rem;
+     }
+
+
+
+     /*CTA*/
+
+     .cta {
+         padding: 4rem 0;
+     }
+     
+
+     .cta h2{
+         font-size: 1.8rem;
+     }
+     
+     .btncta {
+         width: 10rem;
+         margin-top: .5rem;
+     }
+
+
+
+	 
+	 
+	 
+	 
+	 /*TABLET FOOTER*/
+
+     
+     
+     [class*="mobileinformed"] {
+         width: 33.33%;
+     }
+     
+
+    .stayinformed p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 1.1rem;
+    }
+
+     .listitem{
+         font-size: .9rem;
+     }
+    
+
+
+/*TABELT CONTACT US*/
+
+     .contact li {
+		font-size: 1.1rem;
+	}
+    .address {
+	margin-top: 0;
+    }
+    .contact ul {
+        list-style: none;
+        margin-top: .5rem;
+    }
+     
+    .social img {
+    width: 5% !important;
+	height: .9rem !important;
+    margin: 0 1rem;
+    }
+    .copyright {
+	font-size: .8rem;
+	text-align: center;
+    padding-top: 1rem;
+    }
+	 
+}
+
+
+
+/*-------------------------------------------------*/
+
+/*FOR DESKTOP*/
+
+ @media (min-width: 993px) and (max-width: 1200px){
+    
+    /* DESKTOP CLIENT BLURB*/
+
+     .client{
+         padding: 2rem 0 2rem 1rem;;
+     }
+
+     .client-blurb{
+         padding-top: 0;
+     }
+     
+     .client img{
+         text-align: center;
+         width: 100%;
+         height: 100%;
+     }
+     
+    
+     /*portfolio*/
+
+     .carousel-item{
+         padding-top: 1rem;
+     }
+     
+     .responsive-cpu img{
+         width: 100%;
+         height: 100%;
+     }
+     
+     
+     .portfolio-content{
+         padding-top: 1rem;
+     }
+     
+     .carousel-item .logo{
+         width: 8rem;
+     }
+     
+
+     .fa-ul{
+         display: none;
+     }
+
+     .port-btn {
+         font-size: 1rem;
+         margin-top: 0;
+     }
+     
+     .carousel-control-prev{
+         top: 85%;
+         left: 88%;
+         width: 60px;
+     }
+
+     .carousel-control-next{
+         right: 2%;
+         top: 85%;
+         width: 60px;
+     }
+     
+     .carousel-control-prev-icon, .carousel-control-next-icon {
+         font-size: 1.2rem;
+     }
+
+	 
+	 /*DESKTOP FOOTER*/
+     
+     /*DESKTOP CONTACT US*/
+
+     .social img {
+         width: 6% !important;
+         height: 1rem !important;
+     }
+     
+     .copyright {
+         font-size: .8rem;
+         text-align: center;
+     }
+}
